@@ -152,9 +152,22 @@ header {
 
 
 .hero {  
-	background-color: var(--hero-color);
+	height: 600px;
+	max-width: 1600px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+		url(../images/hero-img.jpg);
+	/* background-image: url(../images/hero-img.jpg); */
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-color: var(--hero-color);
 	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-bottom: 200px; */
+}
+
+.hero-ti {
+	padding: 200px 0;
 }
 
 .hero-title {
@@ -176,7 +189,7 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
-	padding: 10px 32px;
+	padding: 8px 30px;
 
 	font-family: inherit;
 	font-style: inherit;

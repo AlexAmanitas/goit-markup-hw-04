@@ -209,7 +209,7 @@ header {
 .hero-button:focus{} 
 
 
-.padbot0{
+.hero + .section {
 	padding-bottom: 0;
 }
 

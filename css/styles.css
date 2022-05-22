@@ -102,7 +102,6 @@ header {
 }
 
 .nav-link {
-	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
@@ -131,8 +130,19 @@ header {
 	color: var(--link-color);
 }
 
-.header-link-mail:hover, .header-link-mail:focus {
+.icon {
+	align-self: center;
+	margin-right: 10px;
+	fill: currentColor;}
+
+.icon:hover {
+	fill: currentColor;
+}	
+
+.header-link-mail:hover,
+.header-link-mail:focus {
 	color: var(--accent-color); 
+	fill: var(--accent-color);
 }
 
 
@@ -229,6 +239,7 @@ header {
 .background {
 	display: block;
 	height: 120px;
+	border-radius: 2px;
 	margin-bottom: 30px;
 	background-color: var(--button-icon-nonactiv-color);
 }

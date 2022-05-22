@@ -116,17 +116,7 @@ header {
 .nav-link:hover, .nav-link:focus {
 	color: var(--accent-color) ; 
 }
-.header-link-mail::before {
-	content: "";
-	background-image: url(../images/svg/envelope.svg);
-	background-repeat: no-repeat;
-	background-position: center;
 
-	margin-right: 10px;
-	height: 16px;
-	width: 16px;
-
-}
  
 .header-link-mail {
 	display: inline-flex;
@@ -145,13 +135,7 @@ header {
 	color: var(--accent-color); 
 }
 
-.header-link-tel::before {
-	content: "";
-	height: 16px;
-	width: 10px;
-	background-image: url(../images/svg/smartphone.svg);
-	margin-right: 10px;
-}
+
 
 .header-link-tel {
 	display: inline-flex;
@@ -242,32 +226,16 @@ header {
 	width: 270px;
 }
 
-.benefits .item::before {
+.background {
 	display: block;
-	content:"" ;
 	height: 120px;
-	background-color: var(--button-icon-nonactiv-color);
-	background-repeat: no-repeat;
-	background-position: center;
 	margin-bottom: 30px;
+	background-color: var(--button-icon-nonactiv-color);
 }
 
-.benefits .item:nth-child(1):before {
-	background-image: url(../images/svg/antenna\ 1.svg);
+.icon-ben {
+ margin: 25px 100px;
 }
-
-.benefits .item:nth-child(2):before {
-	background-image: url(../images/svg/clock\ 1.svg);
-}
-
-.benefits .item:nth-child(3):before {
-	background-image: url(../images/svg/diagram\ 1.svg);
-}
-
-.benefits .item:nth-child(4):before {
-	background-image: url(../images/svg/astronaut\ 1.svg);
-}
-
 
 .benefits .item + .item {
 	margin-left: 30px;

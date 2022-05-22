@@ -14,7 +14,7 @@
 	--team-bcgr-clr:#F5F4FA;
 	--link-color:#757575; /*var(--link-color)*/
 	--hero-color: #2F303A; /*var(--hero-color)*/
-	--button-nonactiv-color:#F5F4FA;
+	--button-icon-nonactiv-color:#F5F4FA;
 	--header-border-clr:#ECECEC;
 	--portfolio-border-clr:#EEEEEE;
 	--footer-link-color: rgba(255, 255, 255, 0.6) /*var(--footer-link-color)*/
@@ -116,9 +116,21 @@ header {
 .nav-link:hover, .nav-link:focus {
 	color: var(--accent-color) ; 
 }
+.header-link-mail::before {
+	content: "";
+	background-image: url(../images/svg/envelope.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	margin-right: 10px;
+	height: 16px;
+	width: 16px;
+
+}
  
 .header-link-mail {
-	margin-left: 331px;
+	display: inline-flex;
+	margin-left: 305px;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
@@ -133,8 +145,17 @@ header {
 	color: var(--accent-color); 
 }
 
+.header-link-tel::before {
+	content: "";
+	height: 16px;
+	width: 10px;
+	background-image: url(../images/svg/smartphone.svg);
+	margin-right: 10px;
+}
+
 .header-link-tel {
-	margin-left: 50px;
+	display: inline-flex;
+	margin-left: 30px;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
@@ -221,6 +242,33 @@ header {
 	width: 270px;
 }
 
+.benefits .item::before {
+	display: block;
+	content:"" ;
+	height: 120px;
+	background-color: var(--button-icon-nonactiv-color);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 30px;
+}
+
+.benefits .item:nth-child(1):before {
+	background-image: url(../images/svg/antenna\ 1.svg);
+}
+
+.benefits .item:nth-child(2):before {
+	background-image: url(../images/svg/clock\ 1.svg);
+}
+
+.benefits .item:nth-child(3):before {
+	background-image: url(../images/svg/diagram\ 1.svg);
+}
+
+.benefits .item:nth-child(4):before {
+	background-image: url(../images/svg/astronaut\ 1.svg);
+}
+
+
 .benefits .item + .item {
 	margin-left: 30px;
 }
@@ -254,11 +302,9 @@ header {
 
 .activity-list {
 	display: flex;
-}
-
-.activity-list .item {
 	margin-top: 50px;
 }
+
 
 .activity-list .item + .item {
 	margin-left: 30px;
@@ -377,7 +423,7 @@ header {
 	line-height: 1.6;
 	text-align: center;
 	letter-spacing: 0.03em;
-	background-color: var(--button-nonactiv-color);
+	background-color: var(--button-icon-nonactiv-color);
 
 	border-radius: 4px;
 	border-style: none;

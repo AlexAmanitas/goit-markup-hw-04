@@ -361,63 +361,33 @@ padding: 30px 0;
 	justify-content: center;
 }
 
-
 .team-net>li+li {
 	margin-left: 10px;
 }
 
-/* .t-ico-box {
-	display: flex;
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-
-	outline: 1px solid tomato;
-}
-
-.t-ico-box:hover {
-	background-color: var(--accent-color);
-
-}
-
-.t-ico {
-	fill: var(--icon-color);
-	padding: 12px;
-
-}
-
-.t-ico:hover {
-	fill: #fff;
-} */
-
-
-
-
 .t-icon-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	
-
-	/* outline: 1px solid tomato; */
+	color: var(--icon-color);
 }
 
 .t-icon-box:hover,
 .t-icon-box:focus {
 	background-color: var(--accent-color);
+	color: var(--white)
 }
 
 .t-icon {
-	fill: var(--icon-color);
-	padding: 12px;
-	height: 44px;
-	width: 44px;
-
+	fill: currentColor;
 }
 
 .t-icon:hover,
 .t-icon:focus {
-	fill: var(--white);
+	fill: currentColor;
 }
 
 
@@ -439,9 +409,12 @@ padding: 30px 0;
 }
 
 .cl-ibox {
+	display: flex;
 	width: 170px;
 	height: 92px;
-	padding: 16px 32px;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
 	border: 1px solid var(--icon-color);
 	color: var(--icon-color);
 }
@@ -459,9 +432,9 @@ padding: 30px 0;
 
 .cl-icon:hover,
 .cl-icon:focus {
- /* fill: var(--accent-color); */
  fill: currentColor;
 }
+
 
 .footer {
 	background-color: var(--footer-color);
@@ -470,7 +443,7 @@ padding: 30px 0;
 
  .footer-bloc {
 	 display: flex;
- }
+}
 
 .adrblock {
 	display: block;
@@ -502,19 +475,14 @@ padding: 30px 0;
 
 .footsocial {
 margin: 12px auto 40px 70px;
-/* margin-left: 70px; */
-
 }
 
 .fl-title {
-	font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 16px;
-		letter-spacing: 0.03em;
-		text-transform: uppercase;
-		color: var(--white);
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--white);
 }
 
 .fl-list {
@@ -522,11 +490,15 @@ margin: 12px auto 40px 70px;
 	margin-top: 20px;
 }
 
-.fl-list>li + li {
+.fl-list > li + li {
 	margin-left: 10px;
 }
 
 .fl-i-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
@@ -539,11 +511,10 @@ margin: 12px auto 40px 70px;
 }
 
 .fl-icon {
-	width: 44px;
-	height: 44px;
-	padding: 12px;
 	fill: var(--white);
 }
+
+
 
 .portfolio-button-bloc {
 	display: flex;
@@ -554,7 +525,6 @@ margin: 12px auto 40px 70px;
 .portfolio-button-bloc .button + .button {
 	margin-left: 8px;
 }
-
 
 .portfolio-button {
 	padding: 6px 22px;
@@ -578,7 +548,7 @@ margin: 12px auto 40px 70px;
 	background-color: var(--accent-color);
 	color: var(--white);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-		border-radius: 4px;
+	border-radius: 4px;
 }
 
 .portfolio-projects {
@@ -588,7 +558,6 @@ margin: 12px auto 40px 70px;
 
 .portfolio-projects .link:hover, 
 .portfolio-projects .link:focus{
-	border: 1px solid #EEEEEE;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 	   0px 4px 4px rgba(0, 0, 0, 0.06),
 	   1px 4px 6px rgba(0, 0, 0, 0.16);

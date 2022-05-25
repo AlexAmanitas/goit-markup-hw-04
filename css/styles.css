@@ -241,15 +241,13 @@ header {
 }
 
 .background {
-	display: block;
+	display: flex;
 	height: 120px;
+	justify-content: center;
+	align-items: center;
 	border-radius: 2px;
 	margin-bottom: 30px;
 	background-color: var(--button-icon-nonactiv-color);
-}
-
-.icon-ben {
- margin: 25px 100px;
 }
 
 .benefits .item + .item {
@@ -355,7 +353,7 @@ padding: 30px 0;
 	color: var(--link-color);
 }
 
-.team-net {
+.team-social {
 	display: flex;
 	margin-top: 16px;
 	justify-content: center;
